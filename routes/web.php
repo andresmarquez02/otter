@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get("forced/seeder","homeController@seeders")
 Route::middleware(['guest'])->group(function () {
     Route::get('/', 'homeController@index');
     Route::get('/login', 'homeController@login')->name('login');
