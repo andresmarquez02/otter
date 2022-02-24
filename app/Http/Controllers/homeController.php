@@ -43,17 +43,9 @@ class homeController extends Controller
     public function seeders(){
         Category::truncate();
         $variable = [
-            "Tecnology",
-            "Css",
-            "Designer",
-            "Sass",
-            "Fashion",
-            "Death",
-            "Music",
-            "National",
-            "Robberys",
-            "Tecnology",
-            "Cine",
+            "Tutoriales",
+            "Programación",
+            "Diseño",
         ];
         foreach ($variable as $item) {
             Category::create([
