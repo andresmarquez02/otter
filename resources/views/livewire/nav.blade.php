@@ -208,25 +208,27 @@
                         </ul>
                     </li>
                     @auth
-                        <li class="nav-item dropdown">
-                            <div class="m-0 nav-link dropdown-toggle" aria-controls="#sidenav-1" aria-haspopup="true"  id="dropdownMenuButton"
-                            data-mdb-toggle="dropdown"
-                            aria-expanded="false">
-                                Admin
-                            </div>
-                            <ul class="dropdown-menu animate" style="  left: -6rem;right: 0;min-width:13rem;" aria-labelledby="dropdownMenuButton">
-                                <li class="px-1 py-2">
-                                    <a class="dropdown-item" href="{{url("categories")}}">Categorias</a>
-                                    <a class="dropdown-item" href="{{url("statistical")}}">Estadisticas</a>
-                                    <a class="dropdown-item" href="{{url("tags")}}">Etiquetas</a>
-                                    <a class="dropdown-item" href="{{url("images/portada")}}">Fotos de portada</a>
-                                    <a class="dropdown-item" href="{{url("iimage/default")}}">Foto por defecto</a>
-                                    <a class="dropdown-item" href="{{url("roles")}}">Roles</a>
-                                    <a class="dropdown-item" href="{{url("users/block")}}">Usuarios Bloqueados</a>
-                                    {{-- <a class="dropdown-item" href="{{url("my/posts")}}">Usuarios y Publicaciones</a> --}}
-                                </li>
-                            </ul>
-                        </li>
+                        @if (auth()->user()->profile->role_id == 1)
+                            <li class="nav-item dropdown">
+                                <div class="m-0 nav-link dropdown-toggle" aria-controls="#sidenav-1" aria-haspopup="true"  id="dropdownMenuButton"
+                                data-mdb-toggle="dropdown"
+                                aria-expanded="false">
+                                    Admin
+                                </div>
+                                <ul class="dropdown-menu animate" style="  left: -6rem;right: 0;min-width:13rem;" aria-labelledby="dropdownMenuButton">
+                                    <li class="px-1 py-2">
+                                        <a class="dropdown-item" href="{{url("categories")}}">Categorias</a>
+                                        <a class="dropdown-item" href="{{url("statistical")}}">Estadisticas</a>
+                                        <a class="dropdown-item" href="{{url("tags")}}">Etiquetas</a>
+                                        <a class="dropdown-item" href="{{url("images/portada")}}">Fotos de portada</a>
+                                        <a class="dropdown-item" href="{{url("iimage/default")}}">Foto por defecto</a>
+                                        <a class="dropdown-item" href="{{url("roles")}}">Roles</a>
+                                        <a class="dropdown-item" href="{{url("users/block")}}">Usuarios Bloqueados</a>
+                                        {{-- <a class="dropdown-item" href="{{url("my/posts")}}">Usuarios y Publicaciones</a> --}}
+                                    </li>
+                                </ul>
+                            </li>
+                        @endif
                     @endauth
                     <li class="nav-item dropdown">
                         <h4 class="m-0 text-white-50 rounded-pill nav-link" aria-controls="#sidenav-1" aria-haspopup="true"  id="dropdownMenuButton"

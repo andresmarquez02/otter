@@ -35,7 +35,7 @@ class Register extends Component
             UserPostView::create([
                 "user_id" => $user->id
             ]);
-            $img = Image::create(["img_url" => "images_user/default.jpg"]);
+            $img = Image::create(["img_url" => "images_user/default.png"]);
             UserProfile::create([
                 "img_profile_id" => $img->id,
                 "user_id" => $user->id,

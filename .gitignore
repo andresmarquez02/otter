@@ -1,7 +1,5 @@
 /node_modules
 /public/hot
-/public/images_user
-/public/img_portada
 /public/livewire-tmp
 /storage/*.key
 /vendor
