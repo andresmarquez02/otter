@@ -7,18 +7,16 @@
         <link rel="stylesheet" href="{{asset('css/newmdb.css')}}">
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <link rel="stylesheet" href="{{asset('css/toast.css')}}">
-        {{-- <link rel="shortcut icon" href="{{asset('Mors.png')}}"> --}}
+        <link rel="shortcut icon" href="{{asset('otter.png')}}">
         <script src="{{asset('js/jquery.min.js')}}"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         @livewireStyles
         @yield('styles')
     </head>
-    <body style="overflow-x: hidden;" class="bg-light-color vh-100-min" data-mdb-spy="scroll" data-mdb-target="#scrollspy" data-mdb-offset="250">
+    <body class="bg-light-color vh-100-min" data-mdb-spy="scroll" data-mdb-target="#scrollspy" data-mdb-offset="250"
+    style="display:flex;flex-direction: column;min-height: 100vh;overflow-x: hidden;">
         @yield('html')
-        {{-- <div>
-            <footer class="p-4 bg-dark">
-                holii
-            </footer>
-        </div> --}}
         <script src="{{asset('js/mdb.min.js')}}"></script>
         <script src="{{asset('js/jquery.min.js')}}"></script>
         <script src="{{asset('js/toast.js')}}"></script>

@@ -9,7 +9,7 @@
             <div class="px-2 mb-2 w-95">
                 <small class="text-muted" style="font-size:12px">
                     <a href="{{!empty(auth()->user()) ? url("home") : url("/")}}">Inicio</a>
-                    <i class="mdi mdi-chevron-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                     Imagenes de Portada
                 </small>
                 <h4 class="fw-bold "><a href="{{request()->fullUrl}}" class="text-dark">Imagenes de Portada</a></h4>

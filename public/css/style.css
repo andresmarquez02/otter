@@ -1,5 +1,6 @@
-@import url(../plugins/material-design-iconic-font/css/materialdesignicons.min.css);
-
+body{
+    font-family: 'Nunito', sans-serif;
+}
 .bg-mp{
     background-image: linear-gradient(0deg,#0000003b,#0000003b), url(../img/gallery_1.jpg);
     background-size:cover;

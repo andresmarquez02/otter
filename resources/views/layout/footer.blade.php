@@ -1,4 +1,4 @@
-<div class="mt-5">
+<div class="mt-5 mt-auto">
     <footer class="text-white bg-dark">
         @guest
             <div class="px-2 pt-5 m-0 px-md-3 px-lg-5 row">
@@ -8,13 +8,13 @@
                     <p>Contáctanos: <span class="text-primary">andres03marquez@gmail.com</span></p>
                     <div>
                         <a href="https://github.com/andresmarquez02" class="p-2 btn btn-light me-2" style="clip-path:circle()">
-                            <i class="mdi mdi-github-circle"></i>
+                            <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/andres-marquez-02/" class="p-2 btn btn-light me-2" style="clip-path:circle()">
-                            <i class="mdi mdi-linkedin"></i>
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                         </a>
                         <a href="https://api.whatsapp.com/send/?phone=%2B584129298833&text&app_absent=0" class="p-2 btn btn-light me-2" style="clip-path:circle()">
-                            <i class="mdi mdi-whatsapp"></i>
+                            <i class="fa-brands fa-whatsapp-square"></i>
                         </a>
                     </div>
                 </div>
@@ -55,6 +55,8 @@
                 </div>
             </div>
         @endguest
-        <div class="py-4 text-center col-12 small"><i class="mdi mdi-copyright"></i> Andres Marquez {{date("Y")}}</div>
+        <div class="py-4 text-center col-12 small"><span class="material-icons-outlined" style="font-size: 16px">
+            <i class="fa-solid fa-copyright"></i>
+            </span> Andres Marquez {{date("Y")}}</div>
     </footer>
 </div>

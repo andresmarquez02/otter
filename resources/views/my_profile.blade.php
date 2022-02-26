@@ -3,8 +3,10 @@
     <link rel="stylesheet" href="{{asset("plugins/dropify/css/dropify.min.css")}}">
 @endsection
 @section('html')
-    @livewire('nav')
-    @livewire('my-profile')
+    <div>
+        @livewire('nav')
+        @livewire('my-profile')
+    </div>
     @include("layout.footer")
 @endsection
 @section('scripts')

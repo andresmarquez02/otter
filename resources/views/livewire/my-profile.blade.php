@@ -12,10 +12,10 @@
     <div class="position-relative">
         <div class="text-center position-absolute w-100" style="top:-180%">
             <div>
-                <i class="text-white h3 mdi mdi-facebook"></i>
-                <i class="text-white ms-5 h3 mdi mdi-instagram"></i>
-                <i class="text-white ms-5 h3 mdi mdi-twitter"></i>
-                <i class="text-white ms-5 h3 mdi mdi-linkedin"></i>
+                <i class="text-white h3 fa-brands fa-facebook" aria-hidden="true"></i>
+                <i class="text-white ms-5 h3 fa-brands fa-instagram" aria-hidden="true"></i>
+                <i class="text-white ms-5 h3 fa-brands fa-twitter" aria-hidden="true"></i>
+                <i class="text-white ms-5 h3 fa-brands fa-linkedin" aria-hidden="true"></i>
                 <div class="mt-2">
                     <button class="btn btn-text-warning btn-water-warning" data-mdb-toggle="modal"
                     data-mdb-target="#exampleModal"

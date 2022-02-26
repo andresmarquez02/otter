@@ -4,7 +4,7 @@
             <div>
                 @foreach ($user_networks as $item)
                     <a href="{{$item->url}}" target="_blank" rel="noopener noreferrer" class="text-white">
-                        <i class="text-white h3 mdi mdi-{{strtolower($item->network->network)}}"></i>
+                        <i class="text-white h3 fa-brands fa-{{strtolower($item->network->network)}}"></i>
                     </a>
                 @endforeach
             </div>

@@ -6,7 +6,7 @@
             <div class="px-2 mb-2 w-95 w-sm-85">
                 <small class="text-muted" style="font-size:12px">
                     <a href="{{!empty(auth()->user()) ? url("home") : url("/")}}">Inicio</a>
-                    <i class="mdi mdi-chevron-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                     Usuarios Bloqueados
                 </small>
                 <h4 class="fw-bold "><a href="{{request()->fullUrl}}" class="text-dark">Usuarios Bloqueados</a></h4>

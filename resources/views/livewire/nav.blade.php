@@ -36,7 +36,7 @@
                                                 <a class="sidenav-link ps-3" href="{{url("images/portada")}}">Fotos de portada</a>
                                             </li>
                                             <li class="sidenav-item">
-                                                <a class="sidenav-link ps-3" href="{{url("iimage/default")}}">Foto por defecto</a>
+                                                <a class="sidenav-link ps-3" href="{{url("image/default")}}">Foto por defecto</a>
                                             </li>
                                             <li class="sidenav-item">
                                                 <a class="sidenav-link ps-3" href="{{url("roles")}}">Roles</a>
@@ -146,17 +146,17 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-o position-fixed">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Otter</a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+            {{-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-            </button>
+            </button> --}}
             <div class="nav-link d-lg-none">
                 <div class="d-flex ms-auto">
                     <div class="dropdown">
                         <h4 class="m-0 text-white-50 me-4 rounded-pill" aria-controls="#sidenav-1" aria-haspopup="true"  id="dropdownMenuButton"
                         data-mdb-toggle="dropdown"
                         aria-expanded="false">
-                            <i class="mdi mdi-magnify"></i>
+                            <i class="fa fa-search" aria-hidden="true"></i>
                         </h4>
                         <ul class="dropdown-menu" style="  left: -13rem;right: 0;width: 15rem;" aria-labelledby="dropdownMenuButton">
                           <li class="px-1 py-2">
@@ -176,7 +176,7 @@
                         </ul>
                     </div>
                     <h4 data-mdb-toggle="sidenav" id="toggle" data-mdb-target="#sidenav-1" class="m-0 text-muted rounded-pill" aria-controls="#sidenav-1" aria-haspopup="true" >
-                        <i class="mdi mdi-view-sequential"></i>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
                     </h4>
                 </div>
             </div>
@@ -221,7 +221,7 @@
                                         <a class="dropdown-item" href="{{url("statistical")}}">Estadisticas</a>
                                         <a class="dropdown-item" href="{{url("tags")}}">Etiquetas</a>
                                         <a class="dropdown-item" href="{{url("images/portada")}}">Fotos de portada</a>
-                                        <a class="dropdown-item" href="{{url("iimage/default")}}">Foto por defecto</a>
+                                        <a class="dropdown-item" href="{{url("image/default")}}">Foto por defecto</a>
                                         <a class="dropdown-item" href="{{url("roles")}}">Roles</a>
                                         <a class="dropdown-item" href="{{url("users/block")}}">Usuarios Bloqueados</a>
                                         {{-- <a class="dropdown-item" href="{{url("my/posts")}}">Usuarios y Publicaciones</a> --}}
@@ -234,7 +234,7 @@
                         <h4 class="m-0 text-white-50 rounded-pill nav-link" aria-controls="#sidenav-1" aria-haspopup="true"  id="dropdownMenuButton"
                         data-mdb-toggle="dropdown"
                         aria-expanded="false">
-                            <i class="mdi mdi-magnify"></i>
+                            <i class="fa fa-search pb-2" style="font-size:14px" aria-hidden="true"></i>
                         </h4>
                         <ul class="dropdown-menu" style="  left: -13rem;right: 0;width: 15rem;" aria-labelledby="dropdownMenuButton">
                             <li class="px-1 py-2">
